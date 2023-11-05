@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="db-style.css">
+    <!-- <link rel="stylesheet" href="fontawesome-free-6.2.1-web/css/fontawesome.min.css"> -->
+    <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.min.css">
+</head>
+
+<body>
+
+
+    <main class="container">
+        <!-- User ınfo start here -->
+        <aside class="userInfoPanel bg-blue-primary" id="navBar">
+            <img src="image/user-icon.png" alt="">
+            <div class="hamburger-menu-icon display-none"> <i class="fa-solid fa-bars fa-2x txt-white"></i></div>
+            <nav class="navBar">
+                <ul>
+                    <li class="fs-13"><i class="fa-sharp fa-solid fa-user txt-white"></i><a href="">My Cloud</a></li>
+                    <li class="fs-13"><i class="fa-solid fa-users txt-white"></i><a href="">Shared Files</a></li>
+                    <li class="fs-13"><i class="fa-solid fa-star txt-white"></i><a href="">Favorites</a></li>
+                    <li class="fs-13"><i class="fa-solid fa-cloud-arrow-up txt-white"></i><a href="">Upload Files</a>
+                    </li>
+                    <li class="fs-13 navbarSettings p-a"><i class="fa-solid fa-gear txt-white"></i><a
+                            href="">Settings</a></li>
+                    <li class="fs-13 navbarlogOut p-a"><i class="fa-solid fa-right-from-bracket txt-white"></i><a
+                            href="">Log
+                            out</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <!-- User ınfo end here -->
+        <!-- Center Panel start here -->
+        <section class="centerPanel bg-light-grey">
+            <!-- Content panel start here -->
+            <div class="contentPanel">
+
+                <!-- Search Bar start here -->
+                <div class="search-bar p-r">
+                    <input type="search" name="search" id="search" placeholder="Search">
+                    <i class="fa-solid fa-magnifying-glass txt-grey"></i>
+                </div>
+
+                <!-- Search Bar  end here -->
+                <!-- Content Categories  start here-->
+                <h3 class="fs-18 txt-blue fw-bold">Categories</h3>
+
+
+
+                <div class="contentCategories ">
+                    <!-- Pictures cate -->
+                    <div class=" categoriesBox  ca-pictures  bg-purple">
+
+                        <div class="ca-pictures-icon">
+                            <!--Bu kısım fazla kod mu-->
+                            <div class="contentPanel-circle"> <i class="fa-solid fa-camera txt-purple "></i> </div>
+                            <i class="fa-solid fa-star  txt-yellow"></i>
+                        </div>
+                        <div class="categoriesBox-text">
+                            <h4 class="txt-white fs-16 fw-600 ">Pictures</h4>
+                            <h6 class="txt-white fs-14 fw-lighter">480 files</h6>
+                        </div>
+                    </div>
+                    <!-- Pictures cate -->
+                    <!-- document cate -->
+                    <div class="categoriesBox  ca-documents  bg-ocean-blue">
+                        <div class="contentPanel-circle"> <i class="fa-solid fa-file txt-ocean-blue"></i> </div>
+                        <div class="categoriesBox-text">
+                            <h4 class="txt-white fs-16 fw-600 ">Documents</h4>
+                            <h6 class="txt-white fs-14 fw-lighter">190 files</h6>
+                        </div>
+                    </div>
+                    <!-- document cate -->
+                    <!-- video cate -->
+                    <div class="categoriesBox  ca-videos  bg-pink">
+                        <div class="contentPanel-circle"> <i class="fa-solid fa-video txt-pink"></i> </div>
+                        <div class="categoriesBox-text">
+                            <h4 class="txt-white fs-16 fw-600 ">Videos</h4>
+                            <h6 class="txt-white fs-14 fw-lighter">30 files</h6>
+                        </div>
+                    </div>
+                    <!-- video cate -->
+                    <!-- audio cate -->
+                    <div class=" categoriesBox  ca-auido  bg-blue-primary">
+                        <div class="contentPanel-circle"> <i class="fa-solid fa-microphone txt-blue"></i></div>
+                        <div class="categoriesBox-text">
+                            <h4 class="txt-white fs-16 fw-600 ">Audio</h4>
+                            <h6 class="txt-white fs-14 fw-lighter">80 files</h6>
+                        </div>
+                    </div>
+                    <!-- audio cate -->
+                </div>
+                <!-- Content Categories end here-->
+
+                <!-- Content Files start here -->
+                <h3 class="fs-18 txt-blue fw-bold">Files</h3>
+
+
+
+                <div class="contentFile">
+
+                    <!-- boxes -->
+                    <div class=" contentFile-box file-work bg-white">
+                        <i class=" fa-solid fa-file-word txt-blue"></i>
+                        <div class="contentFileBox-text">
+
+                            <h4>Work</h4>
+                            <h5>820 files</h5>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class=" contentFile-box file-personal bg-white">
+                        <i class="fa-solid fa-user txt-ocean-blue"></i>
+                        <div class="contentFileBox-text">
+                            <h4>Personal</h4>
+                            <h5>115 files</h5>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="contentFile-box file-school bg-white">
+                        <i class="fa-solid fa-graduation-cap txt-pink"></i>
+                        <div class="contentFileBox-text">
+                            <h4>School</h4>
+                            <h5>65 files</h5>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="contentFile-box file-archive bg-white">
+                        <i class="fa-solid fa-box-archive txt-blue"></i>
+                        <div class="contentFileBox-text">
+                            <h4>Archive</h4>
+                            <h5>21 files</h5>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="contentFile-box file-upload-box bg-grey">
+                        <i class="fa-solid fa-plus fa-2x"></i>
+                    </div>
+                    <!-- boxes end -->
+                </div>
+
+                <!-- Content Files  end here-->
+
+
+                <!-- Recent file -3 - Grid Sistem  -->
+                <h3 class="fs-18 txt-blue fw-bold">Recent Files</h3>
+                <div class="recentFile">
+
+
+                    <div class="recent-file-column-box bg-white">
+                        <div class="item-1-1 recent-files-icon-and-text">
+                            <!-- <div class="recent-files-icon-and-text"> -->
+                            <i class="fa-solid fa-camera txt-white bg-purple recent-files-icon"></i>
+                            <h4 class="fs-13">IMG_10000000</h4>
+                            <!-- </div> -->
+                        </div>
+                        <div class=" item-1-2 ">
+                            <h4 class="fs-14 txt-grey fw-500">PNG File</h4>
+                        </div>
+                        <div class="item-1-3 ">
+                            <h4 class="fs-14 txt-grey fw-500">5 MB</h4>
+                        </div>
+                        <div class=" item-1-4">
+                            <i class="fa-solid fa-share-nodes txt-blue "></i>
+                        </div>
+                        <div class=" item-1-5">
+                            <i class="fa-solid fa-ellipsis txt-blue"></i>
+                        </div>
+                    </div>
+
+
+                    <div class="recent-file-column-box bg-white">
+                        <div class="item-1-1 recent-files-icon-and-text">
+                            <!-- <div class="recent-files-icon-and-text"> -->
+                            <i class="fa-solid fa-video txt-white  bg-pink recent-files-icon"></i>
+                            <h4 class="fs-13">Startup pitch</h4>
+                            <!-- </div> -->
+                        </div>
+                        <div class=" item-1-2">
+                            <h4 class="fs-14 txt-grey fw-500">AVI File</h4>
+                        </div>
+                        <div class="item-1-3 ">
+                            <h4 class="fs-14 txt-grey fw-500">105 MB</h4>
+                        </div>
+                        <div class=" item-1-4">
+                            <i class="fa-solid fa-share-nodes txt-blue "></i>
+                        </div>
+                        <div class=" item-1-5">
+                            <i class="fa-solid fa-ellipsis txt-blue"></i>
+                        </div>
+                    </div>
+                    <div class="recent-file-column-box bg-white">
+                        <div class="item-1-1 recent-files-icon-and-text">
+                            <!-- <div class="recent-files-icon-and-text"> -->
+                            <i class="fa-solid fa-microphone txt-white bg-blue-primary recent-files-icon"></i>
+                            <h4 class="fs-13">Freestyle beat</h4>
+                            <!-- </div> -->
+                        </div>
+                        <div class=" item-1-2">
+                            <h4 class="fs-14 txt-grey fw-500">MP3 File</h4>
+                        </div>
+                        <div class="item-1-3 ">
+                            <h4 class="fs-14 txt-grey fw-500">21 MB</h4>
+                        </div>
+                        <div class=" item-1-4">
+                            <i class="fa-solid fa-share-nodes txt-blue "></i>
+                        </div>
+                        <div class=" item-1-5">
+                            <i class="fa-solid fa-ellipsis txt-blue"></i>
+                        </div>
+                    </div>
+                    <div class="recent-file-column-box bg-white">
+                        <div class="item-1-1 recent-files-icon-and-text">
+                            <!-- <div class="recent-files-icon-and-text"> -->
+                            <i class="fa-solid fa-file txt-white bg-blue-primary recent-files-icon"></i>
+                            <h4 class="fs-13">Work proposal</h4>
+                            <!-- </div> -->
+                        </div>
+                        <div class=" item-1-2 ">
+                            <h4 class="fs-14 txt-grey fw-500">DOCx File</h4>
+                        </div>
+                        <div class="item-1-3 ">
+                            <h4 class="fs-14 txt-grey fw-500">500 KB</h4>
+                        </div>
+                        <div class=" item-1-4">
+                            <i class="fa-solid fa-share-nodes txt-blue "></i>
+                        </div>
+                        <div class=" item-1-5">
+                            <i class="fa-solid fa-ellipsis txt-blue"></i>
+                        </div>
+                    </div>
+                    <div class="recent-file-column-box bg-white">
+                        <div class="item-1-1 recent-files-icon-and-text">
+                            <!-- <div class="recent-files-icon-and-text"> -->
+                            <i class="fa-solid fa-file txt-white bg-blue-primary recent-files-icon"></i>
+                            <h4 class="fs-13">Work proposal</h4>
+                            <!-- </div> -->
+                        </div>
+                        <div class=" item-1-2 ">
+                            <h4 class="fs-14 txt-grey fw-500">DOCx File</h4>
+                        </div>
+                        <div class="item-1-3 ">
+                            <h4 class="fs-14 txt-grey fw-500">500 KB</h4>
+                        </div>
+                        <div class=" item-1-4">
+                            <i class="fa-solid fa-share-nodes txt-blue "></i>
+                        </div>
+                        <div class=" item-1-5">
+                            <i class="fa-solid fa-ellipsis txt-blue"></i>
+                        </div>
+                    </div>
+
+
+                </div>
+                <!-- Recent file -3 Grid sistem  -->
+            </div>
+            <!-- Right paneli grid sistem ile yaptım -->
+            <!-- Right panel new start here -->
+            <div class="rightPanel bg-white">
+
+
+                <div class="plusrightPanel display-none"> <a href="#popup-container"><i
+                            class="fa-solid fa-plus"></i></a></div>
+
+
+                <!-- <div class="wrap"> -->
+
+                <div class="upload-file bg-light-grey">
+                    <?xml version="1.0" ?>
+                    <i class="fa-solid fa-upload fa-2x mt-5 txt-blue"></i>
+                    <form action="#">
+                        <input type="file" name="file" class="file-input" hidden>
+                    </form>
+
+                    <p class="fs-16 txt-blue fw-600 ">Add new files</p>
+                </div>
+
+                <div class="storage-file bg-light-grey">
+                    <div class="storage">
+                        <h4 class="display-inline fs-14 fw-bold txt-blue">Your storage</h4><span
+                            class="txt-ocean-blue fs-14 fw-bold">25% Left</span>
+                    </div>
+                    <h5 class="fs-13 txt-blue fw-600">75 GB of 100GB are used</h5>
+                    <progress value="75" max="100"></progress>
+                </div>
+
+                <div class="shared-folders bg-light-grey">
+                    <!-- <div class="shared-folders-boxes"> -->
+                    <h3 class="fs-14 mt-4 txt-blue">Your Shared Files</h3>
+                    <div class="folder-name bg-second-blue">
+                        <h4 class="fs-14 fw-600 txt-blue">Keynote files</h4>
+                        <img src="image/user-icon.png" alt="" width="24px" height="24px">
+                    </div>
+
+                    <div class="folder-name bg-hazel">
+                        <h4 class="fs-14 fw-600 txt-blue">Vacation Photos</h4>
+                        <img src="image/user-icon.png" alt="" width="24px" height="24px">
+                    </div>
+
+                    <div class="folder-name bg-light-pink">
+                        <h4 class="fs-14 fw-600 txt-blue">Project Report</h4>
+                        <img src="image/user-icon.png" alt="" width="24px" height="24px">
+                    </div>
+
+
+
+                    <button class="btn bg-white" type="button">+ Add more</button>
+                    <!-- </div> -->
+                </div>
+            </div>
+            <!-- </div> -->
+            </div>
+            <!-- Right Panel for responsive popup start here -->
+            <div id="popup-container" class="overlay">
+                <div class="popup display-none">
+
+                    <h2>Right Panel</h2>
+                    <a class="close" href="#"><i class="fa-solid fa-xmark"></i></a>
+                    <div class="content">
+
+                        <!-- Upload - file - modal -->
+                        <div class="upload-file bg-light-grey">
+                            <?xml version="1.0" ?>
+                            <i class="fa-solid fa-upload fa-2x mt-5 txt-blue"></i>
+                            <form action="">
+                                <input type="file" name="file" id="file" hidden class="file-input">
+                            </form>
+
+                            <p class="fs-16 txt-blue fw-600 ">Add new files</p>
+                        </div>
+                        <!-- Upload - file - modal -->
+
+                        <!-- Storage - file - modal -->
+
+                        <div class="storage-file bg-light-grey">
+                            <div class="storage">
+                                <h4 class="display-inline fs-14 fw-bold txt-blue">Your storage</h4><span
+                                    class="txt-ocean-blue fs-14 fw-bold">25% Left</span>
+                            </div>
+                            <h5 class="fs-13 txt-blue fw-600">75 GB of 100GB are used</h5>
+                            <progress value="75" max="100"></progress>
+                        </div>
+                        <!-- Storage - file - modal -->
+
+                        <!-- Shared folders - modal -->
+
+                        <div class="shared-folders bg-light-grey">
+                            <!-- <div class="shared-folders-boxes"> -->
+                            <h3 class="fs-14 mt-4 txt-blue">Your Shared Files</h3>
+                            <div class="folder-name bg-second-blue">
+                                <h4 class="fs-14 fw-600 txt-blue">Keynote files</h4>
+                                <img src="image/user-icon.png" alt="" width="24px" height="24px">
+                            </div>
+
+                            <div class="folder-name bg-hazel">
+                                <h4 class="fs-14 fw-600 txt-blue">Vacation Photos</h4>
+                                <img src="image/user-icon.png" alt="" width="24px" height="24px">
+                            </div>
+
+                            <div class="folder-name bg-light-pink">
+                                <h4 class="fs-14 fw-600 txt-blue">Project Report</h4>
+                                <img src="image/user-icon.png" alt="" width="24px" height="24px">
+                            </div>
+                            <button class="btn bg-white" type="button">+ Add more</button>
+                            <!-- </div> -->
+                        </div>
+
+
+                        <!-- Shared folders - modal -->
+                    </div>
+                </div>
+            </div>
+            <!-- Right Panel for responsive finish start here -->
+            <!-- Right panel new end here -->
+        </section>
+    </main>
+</body>
+
+</html>

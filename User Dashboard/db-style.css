@@ -1,0 +1,716 @@
+/* Common */
+/* Font-size */
+.fs-12 {font-size: 10px;}
+.fs-14 {font-size: 14px;}
+.fs-13{font-size: 13px;}
+.fs-16 {font-size: 16px;}
+.fs-18 {font-size: 18px;}
+.fs-20 { font-size: 20px;}
+.fs-22 {font-size: 22px;}
+.fs-24 {font-size: 24px;}
+.fs-26 {font-size: 26px;}
+.fs-28 {font-size: 28px;}
+.fs-30 {font-size: 30px;}
+/* Font-size */
+/* Text Color */
+.txt-white {color: white;}
+.txt-blue {color: #06367a}
+.txt-ocean-blue {color: #06aabb;}
+.txt-light-grey {color: #ededed;}
+.txt-light-black {color: #171717;}
+.txt-purple{color:  #6663fe;}
+.txt-pink{color:  #E06C9F;}
+.txt-yellow{color:rgb(243, 214, 2);}
+.txt-grey{color: #a3a3a3;}
+.txt-navbar-icon{color: #C3D1DA;}
+/* Text Color */
+/* Text Weight */
+.fw-400 { font-weight: 400;}
+.fw-500 { font-weight: 500;}
+.fw-600 { font-weight: 600;}
+.fw-700 { font-weight: 700;}
+.fw-lighter { font-weight: lighter;}
+.fw-bold { font-weight: bold;}
+.fw-bolder { font-weight: bolder;}
+/* Text Weight */
+/* Background Color */
+.bg-blue-primary { background-color: #06367a;}
+.bg-white { background-color: #fff;}
+.bg-light-grey {background-color: #ebe8e8;}
+.bg-grey{background-color: #d4d4d4;}
+.bg-purple { background-color: #6663fe}
+.bg-ocean-blue { background-color: #00A0B6}
+.bg-pink {background-color: #E06C9F}
+.bg-blue-second { background-color: #266fd5}
+.bg-turkuaz {background-color: #bde5eb;}
+.bg-second-blue { background-color: #bde5eb;}
+.bg-hazel { background-color: #d7d7ff;}
+.bg-light-pink { background-color: #f7dae7;}
+.bg-pink-100{background-color: #F88786;}
+.bg-navbar-icon{background-color: #C3D1DA;}
+/* Background Color */
+/* Position */
+.p-a {position: absolute;}
+.p-r {position: relative;}
+.p-f{position: fixed;}
+.p-s{position: sticky;}
+.p-static{position: static;}
+/* Position */
+/* Display */
+.display-block { display: block;}
+.display-inline { display: inline;}
+.display-inline-block {display: inline-block;}
+.display-none{display: none;}
+.display-grid{display: grid;}
+.display-inline-flex{display: inline-flex;}
+/* Display */
+/* Margin */
+.m-0{margin: 0;}
+.m-1{margin: 4px;}
+.m-2{margin: 6px;}
+.m-3{margin: 8px;}
+.m-4{margin: 10px;}
+.m-5{margin: 12px;}
+.mt-1{margin: 4px;}
+.mt-2{margin: 6px;}
+.mt-3{margin: 8px;}
+.mt-4{margin: 10px;}
+.mt-5{margin: 12px;}
+.mb-1{margin: 4px;}
+.mb-2{margin: 6px;}
+.mb-3{margin: 8px;}
+.mb-4{margin: 10px;}
+.mb-5{margin: 12px;}
+.mr-1{margin: 4px;}
+.mr-2{margin: 6px;}
+.mr-3{margin: 8px;}
+.mr-4{margin: 10px;}
+.mr-5{margin: 12px;}
+.ml-1{margin: 4px;}
+.ml-2{margin: 6px;}
+.ml-3{margin: 8px;}
+.ml-4{margin: 10px;}
+.ml-5{margin: 12px;}
+/* Margin */
+a {text-decoration: none;}
+ul li { list-style: none;}
+/* Common */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.container {
+    
+    /* align-items: stretch;
+    height: 100vh; */
+ 
+}
+/* userInfoPanel start here */
+
+.userInfoPanel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:  12px 0;
+    /* justify-content:center; */
+    height: 100vh;
+    position: fixed;
+    width: 140px;
+    left: 0;
+    transition: 0.5s;
+}
+.userInfoPanel  img{
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+}
+.navBar {
+    /* padding: 22px; */
+    display: flex;
+    position: relative;
+    flex-grow: 1;
+    /* background-color: red; */
+    width: 100%;
+}
+.navBar >ul {
+    margin-top: 20px;
+    width: 100%; 
+}
+.navBar>ul>li {
+    padding:10px;
+    margin-top: 8px;
+}
+.navBar>ul>li:hover
+ {
+    background-color: #1f5eb7;
+}
+
+.navBar>ul>li a {
+    color: white;
+
+    /* Buradaki gap yöntemini kullanabilmek için "a" kısmına yani buraya display flex özelliği vermem lazım */
+    /* display: flex;
+    gap: 10px; */
+}
+
+.navBar>ul>li i {
+    margin-right: 8px;
+}
+
+.navbarSettings {
+    bottom: 40px;
+    left: 0;
+    width: 100%;
+}
+
+.navbarlogOut {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+/* userInfoPanel end here */
+
+
+/* center Panel start here */
+
+.centerPanel {
+    flex-grow: 1;
+    grid-template-columns: repeat(3, 1fr);
+    display: grid; 
+    height: 100vh;
+    overflow: auto;
+    padding-left: 140px;
+      
+}
+/* center Panel end here */
+
+
+/* Content Panel start here */
+
+.contentPanel {
+    grid-column: 1 / span 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 30px;
+}
+/* Search Bar start here */
+
+
+.search-bar > input{
+        justify-content: center;
+        width: 100%;
+        padding: 16px 50px;
+        border-radius: 30px;
+        border:1px solid transparent;
+        outline: none;
+    }
+
+    .search-bar > input:focus{
+        border:1px solid black;
+        background-color: rgb(211, 237, 246);
+        transition: 0.4s;
+    }
+
+.search-bar i {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+
+}
+
+/* Search Bar end here */
+
+/* Content Categories start here */
+
+ .contentCategories{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+.categoriesBox{
+    border-radius: 10px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 14px;
+  
+}
+.contentPanel-circle{
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 60px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ .ca-pictures-icon{
+    /* Bu kısım fazla kod mu ? */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ca-pictures:hover{
+    background-color: #3c39c0;
+    transition: ease-in-out 0.3s;
+    cursor: pointer;
+}
+
+
+.ca-documents:hover{
+    background-color: #0a8191;
+    transition: ease-in-out 0.3s;
+    cursor: pointer;
+}
+.ca-videos:hover{
+    background-color: rgb(231, 36, 121);
+    transition: ease-in-out 0.3s;
+    cursor: pointer;
+}
+
+.ca-auido:hover{
+    background-color: #032e6a;
+    transition: ease-in-out 0.3s;
+    cursor: pointer;
+}
+
+.categoriesBox-text{
+    display: flex;
+    flex-direction: column;
+    gap: 6px
+}
+
+/* Content Categories end here*/
+
+/* Content Files start here*/
+
+ .contentFile{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.contentFile-box{
+    border-radius: 10px;
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    gap: 12px;
+    cursor: pointer;
+}
+hr{
+    width: 50px;
+    margin: auto;
+}
+.contentFile-box.file-upload-box  i{
+        margin: auto;
+}
+
+ .contentFile-box:hover{
+    color: white;
+    transition:ease-in-out 0.3s;
+}
+/* İkon renklerini değiştiremedim.  Çünkü html yapısında ikonlara ortak class renklerinden verdim */
+.contentFile  .file-upload-box:hover{
+    background-color: rgb(165, 165, 165);
+    transition:ease-in-out 0.3s;
+
+}
+
+
+.file-work:hover { 
+    background: linear-gradient(90deg, rgba(106,104,228,1) 0%, rgba(166,165,235,1) 100%, rgba(134,132,245,1) 100%);
+}
+.file-personal:hover{
+    background: linear-gradient(90deg, rgba(63,129,138,1) 0%, rgba(59,171,186,1) 100%, rgba(19,146,163,1) 100%);
+}
+
+.file-school:hover{
+    background: linear-gradient(90deg, rgba(200,64,124,1) 8%, rgba(235,124,173,1) 62%, rgba(224,83,144,1) 100%);
+}
+
+.file-archive:hover{
+    background: linear-gradient(90deg, rgba(29,85,163,1) 8%, rgba(42,105,193,1) 43%, rgba(19,79,162,1) 100%);
+    
+}
+/* Content Files end here */
+
+
+
+
+/* Recent file - 3 grid sistemi */
+
+.recentFile{
+    display: grid;
+    grid-template-columns:  repeat(1, 1fr);
+    gap: 8px;
+}
+
+.recent-file-column-box{
+    display: grid;
+     grid-template-columns: repeat(5, 1fr); 
+    text-align: right; 
+    align-items: center;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.item-1-5{
+    text-align: right;    
+}
+.recent-files-icon-and-text{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.recent-files-icon-and-text > i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:40px;
+    height: 40px;
+    border-radius: 10px; 
+
+}
+.fa-ellipsis,
+.fa-share-nodes{
+    cursor: pointer;
+}
+/* Recent file - 3 grid sistemi */
+/* Content Panel finish here */
+
+/* RIGHT PANEL YENI KODLAR */
+
+.rightPanel{
+    border-radius: 10px;
+    margin: 20px;
+    /* display: grid;*/ /* Eski kod Yapısı*/ 
+    background-color: rgb(255, 255, 255);
+    width: 300px;
+    position: fixed;
+    right: 0;
+    height: 100vh;
+    overflow:auto;
+    display: flex; /* Yeni kod yapısı*/
+    flex-direction: column; /* Yeni kod yapısı*/
+    justify-content: space-around; /* Yeni kod yapısı*/
+}
+
+.rightPanel .upload-file{
+ margin: 20px;
+}
+.rightPanel .storage-file{
+    margin: 20px;
+}
+.rightPanel .shared-folders{
+    margin: 20px;
+}
+
+
+.upload-file{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.storage-file {
+    display: flex;
+    flex-direction: column;
+    border-radius: 14px;
+    justify-content:space-evenly;
+    padding: 10px;
+   
+}
+
+.storage-file > h5{    
+    padding: 10px;
+}
+.storage {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+progress {
+    width: auto;
+    margin: 0 10px 10px 10px;
+} 
+
+.shared-folders{
+    display: flex;
+    flex-direction: column;
+    border-radius: 14px;
+    padding: 10px;
+}
+.folder-name{
+    display: flex;
+    padding: 12px;
+    margin: 6px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+}  
+
+.btn{
+    border-radius: 10px;
+    margin: 8px;
+    padding: 14px;
+    outline: none;
+    border: 2px solid #ccc;
+    cursor: pointer;
+
+}
+
+.btn:hover{
+    background-color: #00A0B6;
+    transition: ease-in-out 0.4s;
+    color: white;
+}
+/* RIGHT PANEL YENI KODLAR */
+
+
+
+/* RESPONSIVE  */
+
+/* RESPONSIVE NAVBAR START HERE */
+@media  (max-width:1199.98px){
+    .userInfoPanel {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding:  12px 0;
+        /* justify-content:center; */
+        height: 100vh;
+        position: fixed;
+        width: 60px;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        transition: 0.5s;
+    }
+    .userInfoPanel  img{
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+    }
+    .navBar {
+        display: flex;
+        position: relative;
+        flex-grow: 1;
+        width: 100%;
+        }
+    .navBar > ul > li  i {
+        display: flex;
+        justify-content: center;
+        color: white;
+      }
+    .navBar>ul>li:hover {
+        background-color: #1f5eb7;
+     }
+    .navBar>ul>li a {
+        display: none;
+     }
+    .navbarSettings {
+        bottom: 40px;
+        left: 0;
+        width: 100%;
+     }
+    .navbarlogOut {
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+}
+/* RESPONSIVE NAVBAR END HERE */
+
+/* OVERLAY POPUP AND COMMON CODE START HERE */
+@media (max-width:991.98px){
+
+
+
+    .overlay {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.7);
+        transition: opacity 500ms;
+        visibility: hidden;
+        opacity: 0;
+        overflow: auto;
+        display: flex;
+      }
+      .overlay:target {
+        visibility: visible;
+        opacity: 1;
+      }
+      .popup {
+        margin: auto;
+        padding: 20px;
+        background: #fff;
+        border-radius: 5px;
+        width: 90vw;
+        position: relative;
+        /* display: block; */
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+      .popup .close {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        transition: all 200ms;
+        font-size: 30px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #000000;
+      }
+      .popup .content {
+        overflow: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      } 
+      .rightPanel {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        right: 0;
+        top:0;
+    } 
+        .rightPanel .upload-file,
+        .storage,
+        .storage-file,
+        .shared-folders{
+            display:none;
+        }
+        .plusrightPanel{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 22px !important;
+          
+        }
+   
+}
+
+/* POPUP CODE END HERE */
+
+
+ /* 768PX START HERE */
+@media (max-width:767.98px){
+    .centerPanel{
+        grid-template-columns: repeat(2, 1fr);
+        display: grid; 
+        padding-left: 60px;
+    }
+    /* .contentPanel {
+        display: flex;
+        position: relative; 
+    } */
+    .search-bar > input{
+            width: 50vw;
+    }
+    .contentCategories{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .contentFile{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .recent-file-column-box{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr); 
+        word-break:break-all; 
+    }
+    .item-1-1{
+        grid-column: 1 / span 3;
+        text-align: left;
+    }
+    .item-1-2,
+    .item-1-3{
+        display: none;
+    }
+            /* RIGHT PANEL MODAL 767.98 START HERE */
+                .popup .storage-file{
+                    display: flex;
+                }
+                .popup .storage {
+                    display: flex;
+                }
+                .popup .shared-folders{
+                    display: flex;
+             
+                }
+
+            /* RIGHT PANEL MODAL  767.98 END HERE */
+/* 768PX END HERE */
+
+
+
+/* 768PX = 991PX START  HERE */
+}
+@media (min-width:768px) and (max-width:991.98px){
+
+.centerPanel{
+        display: block;
+        padding-left: 50px;    
+    }
+.contentPanel{
+            height: 100vh;
+            overflow: auto;
+    }
+.search-bar > input{
+        width: 70vw;
+}
+.contentCategories{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.contentFile{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+            /* RIGHT PANEL MODAL  768px 991PX START HERE */
+          
+            .popup .storage-file{
+                display: flex;
+            }
+            .popup .storage {
+                display: flex;
+            }
+            .popup .shared-folders{
+                display: flex;
+             
+            }
+            /* RIGHT PANEL MODAL  768px 991PX END HERE */
+}
+/* 768PX = 991PX END HERE */
+
+@media (min-width:992px) and (max-width:1199.98px){
+    .centerPanel{
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+}
+/* RESPONSIVE  */
